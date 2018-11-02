@@ -1,5 +1,5 @@
 class TicTacToe
-def intialize(board = nil)
+def intialize(board)
   @board = board == Array.new(9," ")
 end
 end
