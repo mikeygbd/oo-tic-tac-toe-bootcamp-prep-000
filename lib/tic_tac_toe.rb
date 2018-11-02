@@ -88,7 +88,7 @@ end
   false
 end
  def full?(board)
-  board.none?{|i| i==" "}
+  @board.none?{|i| i==" "}
 end
  def draw?(board)
   if full?(board) and !won?(board)
@@ -104,7 +104,7 @@ end
  def winner(board)
   if won?(board)
     winning_row = won?(board)
-    board[winning_row[0]]
+    @board[winning_row[0]]
   end
 end
  def play(board)
